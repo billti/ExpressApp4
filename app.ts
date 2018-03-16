@@ -18,6 +18,7 @@ app.use('/users', users);
 
 app.use('/api', (req, res, next) => {
     res.json({"result": "success"});
+    process.exit(1);
 });
 
 // catch 404 and forward to error handler

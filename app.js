@@ -14,6 +14,7 @@ app.use('/', index_1.default);
 app.use('/users', user_1.default);
 app.use('/api', function (req, res, next) {
     res.json({ "result": "success" });
+    process.exit(1);
 });
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
